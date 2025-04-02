@@ -64,7 +64,7 @@ export function StickyNavbar() {
   );
  
   return (
-    <div className="max-h-[768px] w-full overflow-auto pt-4"> {/* Removed -m-6 and overflow-scroll */}
+    <div className="w-full pt-4"> {/* Removed overflow-auto */}
       <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none shadow-none">
         <div className="relative flex items-center justify-between text-blue-gray-900">
           <Typography
@@ -121,3 +121,5 @@ export function StickyNavbar() {
     </div>
   );
 }
+
+export default StickyNavbar
