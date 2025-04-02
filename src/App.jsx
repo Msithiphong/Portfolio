@@ -5,8 +5,9 @@ import './index.css';
 function App() {
   return (
     <>
-      <StickyNavbar />
+      <StickyNavbar /> {/* StickyNavbar is rendered here */}
       <div className="min-h-screen bg-gradient-to-br from-gray-900 to-black flex items-center justify-center">
+        {/* Hero section */}
         <div className="bg-white/10 backdrop-blur-md rounded-xl p-10 border border-white/30 shadow-lg text-white">
           <h1 className="text-3xl font-semibold">
             Maxwell Sithiphong's Portfolio Website
