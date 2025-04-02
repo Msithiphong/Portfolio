@@ -1,5 +1,6 @@
+import React from "react";
 import { StickyNavbar } from './components/StickyNavbar';
-import './index.css'
+import './index.css';
 
 function App() {
   return (
