@@ -23,8 +23,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue" // Changed to blue
-        className="p-1 font-normal"
+        color="blue"
+        className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
         <a href="#" className="flex items-center">
           Home
@@ -33,8 +33,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue" // Changed to blue
-        className="p-1 font-normal"
+        color="blue"
+        className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
         <a href="#" className="flex items-center">
           Projects
@@ -43,8 +43,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue" // Changed to blue
-        className="p-1 font-normal"
+        color="blue"
+        className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
         <a href="#" className="flex items-center">
           Contact
@@ -53,8 +53,8 @@ export function StickyNavbar() {
       <Typography
         as="li"
         variant="small"
-        color="blue" // Changed to blue
-        className="p-1 font-normal"
+        color="blue"
+        className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
         <a href="#" className="flex items-center">
           Resume
@@ -65,13 +65,13 @@ export function StickyNavbar() {
  
   return (
     <div className="max-h-[768px] w-full overflow-auto pt-4"> {/* Removed -m-6 and overflow-scroll */}
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 bg-transparent border-none shadow-none">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none shadow-none">
         <div className="relative flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
             href="#"
             color="blue"
-            className="mr-4 cursor-pointer py-1.5 font-medium"
+            className="mr-4 cursor-pointer py-1.5 font-medium text-[#FAFAFA]" // Updated text color
           >
             Maxwell Sithiphong
           </Typography>
