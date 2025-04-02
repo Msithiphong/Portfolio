@@ -54,9 +54,14 @@ export function StickyNavbar() {
         as="li"
         variant="small"
         color="blue"
-        className="p-1 font-normal text-[#FAFAFA]" // Updated text color
+        className="p-1 font-normal text-[#FAFAFA]"
       >
-        <a href="#" className="flex items-center">
+        <a
+          href="/links/Maxwell Sithiphong's Resume.pdf" // Correct path to the PDF in the public folder
+          target="_blank" // Opens the PDF in a new tab
+          rel="noopener noreferrer" // Improves security
+          className="flex items-center"
+        >
           Resume
         </a>
       </Typography>
@@ -64,8 +69,8 @@ export function StickyNavbar() {
   );
  
   return (
-    <div className="w-full pt-4"> {/* Removed overflow-auto */}
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 border-none shadow-none">
+    <div className="w-full pt-4"> 
+      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 shadow-none">
         <div className="relative flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -122,4 +127,4 @@ export function StickyNavbar() {
   );
 }
 
-export default StickyNavbar
+export default StickyNavbar;
