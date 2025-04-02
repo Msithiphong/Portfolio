@@ -57,7 +57,7 @@ export function StickyNavbar() {
         className="p-1 font-normal text-[#FAFAFA]"
       >
         <a
-          href="/links/Maxwell Sithiphong's Resume.pdf" // Correct path to the PDF in the public folder
+          href="/links/Maxwell Sithiphong's Resume.pdf" // Ensure the file exists in public/links
           target="_blank" // Opens the PDF in a new tab
           rel="noopener noreferrer" // Improves security
           className="flex items-center hover-expand-effect"
@@ -74,7 +74,7 @@ export function StickyNavbar() {
         <div className="relative flex items-center justify-between text-blue-gray-900">
           <div className="flex items-center gap-4"> {/* Added container for image and text */}
             <img
-              src="/images/Headshot.jpg" // Path to the profile picture
+              src="/images/Headshot.jpg" // Ensure the file exists in public/images
               alt="Profile"
               className="w-20 h-20 rounded-full object-cover hover-expand-effect" // Added zoom effect
             />
