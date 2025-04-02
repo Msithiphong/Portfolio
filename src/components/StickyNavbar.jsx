@@ -26,7 +26,7 @@ export function StickyNavbar() {
         color="blue"
         className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
-        <a href="#" className="flex items-center hover-expand-effect">
+        <a href="#home" className="flex items-center hover-expand-effect">
           Home
         </a>
       </Typography>
@@ -36,7 +36,7 @@ export function StickyNavbar() {
         color="blue"
         className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
-        <a href="#" className="flex items-center hover-expand-effect">
+        <a href="#projects" className="flex items-center hover-expand-effect">
           Projects
         </a>
       </Typography>
@@ -46,7 +46,7 @@ export function StickyNavbar() {
         color="blue"
         className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
-        <a href="#" className="flex items-center hover-expand-effect">
+        <a href="#contact" className="flex items-center hover-expand-effect">
           Contact
         </a>
       </Typography>
@@ -57,7 +57,7 @@ export function StickyNavbar() {
         className="p-1 font-normal text-[#FAFAFA]"
       >
         <a
-          href="/links/Maxwell Sithiphong's Resume.pdf" // Ensure the file exists in public/links
+          href="/links/Maxwell_Sithiphong_Resume.PDF" // Ensure the file exists in public/links
           target="_blank" // Opens the PDF in a new tab
           rel="noopener noreferrer" // Improves security
           className="flex items-center hover-expand-effect"
@@ -74,7 +74,7 @@ export function StickyNavbar() {
         <div className="relative flex items-center justify-between text-blue-gray-900">
           <div className="flex items-center gap-4"> {/* Added container for image and text */}
             <img
-              src="/images/Headshot.jpg" // Ensure the file exists in public/images
+              src="/images/Headshot.JPG" // Ensure the file exists in public/images
               alt="Profile"
               className="w-20 h-20 rounded-full object-cover hover-expand-effect" // Added zoom effect
             />
