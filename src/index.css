@@ -16,3 +16,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hover-expand-effect {
+  @apply transform transition-transform duration-150 hover:scale-105;
+}

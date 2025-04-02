@@ -26,7 +26,7 @@ export function StickyNavbar() {
         color="blue"
         className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center hover-expand-effect">
           Home
         </a>
       </Typography>
@@ -36,7 +36,7 @@ export function StickyNavbar() {
         color="blue"
         className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center hover-expand-effect">
           Projects
         </a>
       </Typography>
@@ -46,7 +46,7 @@ export function StickyNavbar() {
         color="blue"
         className="p-1 font-normal text-[#FAFAFA]" // Updated text color
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center hover-expand-effect">
           Contact
         </a>
       </Typography>
@@ -60,7 +60,7 @@ export function StickyNavbar() {
           href="/links/Maxwell Sithiphong's Resume.pdf" // Correct path to the PDF in the public folder
           target="_blank" // Opens the PDF in a new tab
           rel="noopener noreferrer" // Improves security
-          className="flex items-center"
+          className="flex items-center hover-expand-effect"
         >
           Resume
         </a>
@@ -70,16 +70,23 @@ export function StickyNavbar() {
  
   return (
     <div className="w-full pt-4"> 
-      <Navbar className="sticky top-0 z-10 h-max max-w-full rounded-none px-4 py-2 lg:px-8 lg:py-4 shadow-none">
+      <Navbar className="sticky top-0 z-10 h-max max-w-full px-4 py-2 lg:px-8 lg:py-4 bg-transparent">
         <div className="relative flex items-center justify-between text-blue-gray-900">
-          <Typography
-            as="a"
-            href="#"
-            color="blue"
-            className="mr-4 cursor-pointer py-1.5 font-medium text-[#FAFAFA]" // Updated text color
-          >
-            Maxwell Sithiphong
-          </Typography>
+          <div className="flex items-center gap-4"> {/* Added container for image and text */}
+            <img
+              src="/images/Headshot.jpg" // Path to the profile picture
+              alt="Profile"
+              className="w-20 h-20 rounded-full object-cover hover-expand-effect" // Added zoom effect
+            />
+            <Typography
+              as="a"
+              href="#"
+              color="blue"
+              className="cursor-pointer py-1.5 font-medium text-[#FAFAFA] hover-expand-effect" // Updated text color
+            >
+              Maxwell Sithiphong
+            </Typography>
+          </div>
           <div className="absolute left-1/2 transform -translate-x-1/2">{navList}</div> {/* Centered navList */}
           <IconButton
             variant="text"
