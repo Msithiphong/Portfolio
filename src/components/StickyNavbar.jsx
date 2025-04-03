@@ -76,7 +76,7 @@ export function StickyNavbar() {
             <img
               src="/images/headshot.png" // Ensure the file exists in public/images
               alt="Profile"
-              className="flex w-20 h-20 rounded-full object-cover hover-expand-effect" // Added zoom effect
+              className="w-20 h-20 rounded-full object-cover" // Added zoom effect
             />
             <Typography
               as="a"
