@@ -1,15 +1,20 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "/static/(.*)",
-      "headers": {
-        "cache-control": "public, max-age=31536000, immutable"
+    "version": 2,
+    "routes": [
+      {
+        "src": "/static/(.*)",
+        "headers": {
+          "cache-control": "public, max-age=31536000, immutable"
+        }
+      },
+      {
+        "src": "/(images|links|fonts|media)/(.*)",
+        "dest": "/$1/$2"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
       }
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ]
-}
+    ]
+  }
+  
