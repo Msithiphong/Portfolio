@@ -13,7 +13,7 @@ export function Projects() {
                 >
                     <img
                         className="w-full"
-                        src="/images/WPM_Notes_Thumbnail.JPG" // Ensure the file exists in public/images
+                        src="/images/wpm_notes_thumb.png" // Ensure the file exists in public/images
                         alt="Website Thumbnail"
                     />
                     <div className="px-6 py-4 bg-transparent">
